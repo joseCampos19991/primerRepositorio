@@ -1,0 +1,15 @@
+Las listas permiten agrupar elementos que tienen relación entre si.
+
+Cuando se crea la lista, se etiquetan los elementos con <li>, deben cerrarse.
+
+Los tipos de listas son:
+
+Lista desordenada: se emplea para definir listas no ordenadas
+
+Lista ordenada: se emplea para definir listas ordenadas
+
+
+Listas de definición: este tipo de lista es diferente al resto de listas vistas, 
+su funcionamiento es similar al de un diccionario. 
+
+La lista se define con <dl>, cada termino se define con <dt> y su descripción  con <dd>. 

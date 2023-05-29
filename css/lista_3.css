@@ -1,0 +1,89 @@
+* {
+      margin: 0;
+      padding: 0;
+
+      /*box-sizing: tamaño de caja: 
+      esta propiedad establece cómo se calcula el ancho
+       y la altura total de un elemento*/
+
+      box-sizing: border-box;
+      font-size: 0;
+}
+
+a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 14px;
+}
+
+li {
+      /* display: inline-block;
+      para que esten todos los enlaces
+       en una misma linea */
+      display: inline-block;
+      width: 150px;
+      height: 30px;
+      padding: 5px 10px;
+      background-color: #000;
+      border: 1px solid #000;
+      text-align: center;
+      color: #fff;
+
+      /*
+      position es una propiedad establece 
+      cómo se coloca un elemento en un documento,
+      es decir, es una propiedad
+       que determina la ubicación final 
+       de los elementos posicionados */
+
+
+       /* position: relative; En la posicion relativa: 
+       El elemento se coloca de acuerdo con el flujo normal
+        del documento y luego se desplaza con respecto a sí mismo 
+        en función de los valores de arriba, derecha, abajo e izquierda. 
+        El desplazamiento no afecta la posición de ningún otro elemento;
+         por lo tanto, el espacio dado para el elemento 
+         en el diseño de la página es el mismo
+          que si la posición fuera estática. */
+
+      position: relative;
+}
+
+li:hover {
+      background-color: #fff;
+      color: #000;
+}
+
+.desplegado {
+      /* display: none; para que nos coloque
+      los li internos de forma correcta  */
+      display: none;
+}
+
+
+/* ¿ > ? */
+li:hover ul {
+      /* display: block; al pasar el raton por encima que los
+      elementos li esten en forma de bloque */
+      display: block;
+
+      /* position: absolute; El elemento se elimina del flujo
+       de documentos normal y no se crea ningún espacio 
+       para el elemento en el diseño de página. 
+       
+       No genera espacio, sino que cede al elemento siguiente
+       su espacio
+       */
+      position: absolute;
+
+      /* top: 30px; para que el subEnlace nos
+       aparezca justo debajo del enlace del
+       que depende*/
+      top: 30px;
+
+
+      /* top: 30px; para que el subEnlace nos
+       aparezca justo a la izquierda del enlace del
+       que depende  */
+      left: 0px;
+}
